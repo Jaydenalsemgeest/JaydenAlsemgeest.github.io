@@ -14,5 +14,9 @@ def projects():
 def contact():
     return render_template("contact.html")
 
+@app.route("/darktech")
+def darktech():
+    return render_template("darktech.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
