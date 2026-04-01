@@ -18,5 +18,17 @@ def contact():
 def darktech():
     return render_template("darktech.html")
 
+@app.route("/dokkie")
+def dokkie():
+    return render_template("dokkie.html")
+
+@app.route("/abnamro")
+def abnamro():
+    return render_template("abnamro.html")
+
+@app.route("/gemeenteamsterdam")
+def gemeenteamsterdam():
+    return render_template("gemeenteamsterdam.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

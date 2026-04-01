@@ -61,16 +61,37 @@
   }
    
    /* === TYPOGRAFIE === */
-   h1, h2, h3, h4 {
-     font-family: var(--font-display);
-     font-weight: 600;
-     line-height: 1.2;
-     color: var(--white);
-   }
-   
-   h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
-   h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
-   h3 { font-size: 1.3rem; }
+   /* Algemene stijl voor alle h-elementen */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial'; /* Kies een lettertype */
+    font-weight: bold; /* Optioneel: maak de tekst vetgedrukt */
+    margin: 0; /* Optioneel: verwijder standaard marges */
+  }
+  
+  /* Specifieke stijlen voor verschillende h-elementen */
+  h1 {
+    font-size: 2.5rem; /* Grootste lettergrootte */
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem; /* Kleinste lettergrootte */
+  }
    
    p {
      color: var(--text-muted);
