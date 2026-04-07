@@ -30,5 +30,9 @@ def abnamro():
 def gemeenteamsterdam():
     return render_template("gemeenteamsterdam.html")
 
+@app.route("/shapecheck")
+def shapecheck():
+    return render_template("shapecheck.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
