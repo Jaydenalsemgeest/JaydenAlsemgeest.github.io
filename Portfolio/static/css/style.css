@@ -560,3 +560,26 @@ h1, h2, h3, h4, h5, h6 {
        padding: 4rem 0;
      }
    }
+
+   /* Box om de projecten */
+    .projecten {
+    display: flex; /* Zorgt ervoor dat de projecten naast elkaar komen */
+    flex-wrap: wrap; /* Laat de projecten naar de volgende regel gaan als er geen ruimte is */
+    gap: 1rem; /* Ruimte tussen de projecten */
+    padding: 1rem; /* Ruimte binnen de box */
+    border: 2px solid #333; /* Zwarte rand om de box */
+    border-radius: 8px; /* Ronde hoeken */
+    background-color: #f9f9f9; /* Lichtgrijze achtergrondkleur */
+  }
+  
+  /* Stijl voor individuele projecten */
+  .project {
+    list-style: none; /* Verwijder de standaard bullet points */
+    flex: 1 1 calc(50% - 1rem); /* Zorgt ervoor dat elk project 50% van de breedte inneemt, met ruimte ertussen */
+    padding: 0.5rem; /* Ruimte binnen elk project */
+    border: 1px solid #ccc; /* Rand om elk project */
+    border-radius: 4px; /* Ronde hoeken voor elk project */
+    background-color: #fff; /* Witte achtergrondkleur */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schaduw voor een subtiel 3D-effect */
+    text-align: center; /* Centreer de tekst in elk project */
+  }
