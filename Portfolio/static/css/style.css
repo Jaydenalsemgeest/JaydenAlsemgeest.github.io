@@ -596,3 +596,17 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   padding: 0.75rem;
 }
+.skills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.skills ul {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+}
+
+.skills ul li::before {
+  content: "• ";
+}
