@@ -610,3 +610,28 @@ h1, h2, h3, h4, h5, h6 {
 .skills ul li::before {
   content: "• ";
 }
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.img-wrapper {
+  flex: 1 1 calc(33% - 10px); /* maximaal 3 per rij */
+  min-width: 0;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  border: 7px solid black;
+  display: block;
+}
+.img-wrapper p {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+}
