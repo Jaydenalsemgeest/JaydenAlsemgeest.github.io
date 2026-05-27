@@ -596,19 +596,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   padding: 0.75rem;
 }
+
 .skills {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.skills ul {
-  display: inline-block;
-  text-align: center;
-  list-style: none;
+  padding: 0; 
+  margin: 0 25rem 0 25rem; 
+  text-align: left; 
+  list-style: inside; 
 }
 
-.skills ul li::before {
-  content: "• ";
+.skills li {
+  margin: 0 0 0.4rem 0; 
+  display: list-item; 
+  text-indent: 0; 
 }
 
 .images {
@@ -634,4 +633,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-top: 0.4rem;
+}
+
+.rol {
+  padding: 0; 
+  margin: 0 25rem 0 25rem; 
+  text-align: left; 
+  list-style: inside; 
+}
+
+.rol li {
+  margin: 0 0 0.4rem 0; 
+  display: list-item; 
+  text-indent: 0; 
+}
+
+b {
+  font-weight: bold; 
 }
