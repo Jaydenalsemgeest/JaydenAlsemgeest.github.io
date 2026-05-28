@@ -651,3 +651,194 @@ h1, h2, h3, h4, h5, h6 {
 b {
   font-weight: bold; 
 }
+#surveillance-panel {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+#reveal-btn {
+  background: #111;
+  color: white;
+
+  border: 1px solid #444;
+
+  padding: 14px 24px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  letter-spacing: 1px;
+}
+
+#reveal-btn:hover {
+  background: #1c1c1c;
+  border-color: #888;
+}
+
+#analysis-box {
+
+  display: none;
+
+  margin: 2rem auto;
+
+  max-width: 600px;
+
+  padding: 2rem;
+
+  background: #0d0d0d;
+
+  border: 1px solid #2b2b2b;
+
+  color: #d6d6d6;
+
+  box-shadow:
+      0 0 40px rgba(255, 0, 0, 0.08);
+}
+
+#analysis-box h3 {
+
+  color: #ff5c5c;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 1rem;
+}
+
+.warning {
+
+  margin-top: 2rem;
+
+  color: #ff6b6b;
+
+  letter-spacing: 1px;
+}
+
+/* basis hidden state */
+#analysis-box {
+  display: none;
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 2rem;
+  background: #0d0d0d;
+  border: 1px solid #2b2b2b;
+  color: #d6d6d6;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.08);
+  position: relative;
+}
+
+/* visible state */
+#analysis-box.visible {
+  display: block;
+  animation: glitchIn 0.35s ease;
+}
+
+/* glitch effect */
+@keyframes glitchIn {
+  0% {
+      transform: translateY(10px);
+      opacity: 0;
+      filter: blur(6px);
+  }
+  50% {
+      transform: translateY(-2px);
+      opacity: 1;
+      filter: blur(1px);
+  }
+  100% {
+      transform: translateY(0);
+      filter: blur(0);
+  }
+}
+
+/* status line */
+#status-line {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #ff5c5c;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+/* warning pulsing */
+.warning {
+  margin-top: 2rem;
+  color: #ff6b6b;
+  letter-spacing: 1px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* button more "surveillance" */
+#reveal-btn {
+  background: #111;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 14px 24px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+#reveal-btn:hover {
+  border-color: #ff5c5c;
+  color: #ff5c5c;
+}
+
+#fine-document {
+  display: none;
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 2rem;
+
+  background: #0a0a0a;
+  border: 1px solid #3a0000;
+
+  color: #e0e0e0;
+
+  box-shadow: 0 0 60px rgba(255, 0, 0, 0.12);
+
+  font-family: monospace;
+
+  animation: fadeInDoc 0.6s ease;
+}
+
+#fine-document h3 {
+  color: #ff3b3b;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+#fine-document .fine {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ff5c5c;
+}
+
+.doc-id {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeInDoc {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+      filter: blur(6px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+  }
+}
+#fine-document {
+  transition: all 0.3s ease;
+}

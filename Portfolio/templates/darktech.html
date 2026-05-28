@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Dark tech - project</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/darktech.js') }}"></script>
 </head>
 <body>
 
@@ -54,6 +55,66 @@
                 </ul>
             </div>
         </p>
+        <div id="surveillance-panel">
+
+            <button id="reveal-btn">
+                Bekijk jouw analyse
+            </button>
+        
+            <div id="analysis-box">
+        
+                <h3>Analyse voltooid</h3>
+                <div id="status-line">SYSTEM READY</div>
+                <p>
+                    Tijd gespendeerd op pagina:
+                    <span id="time-result"></span>
+                </p>
+        
+                <p>
+                    Muisbewegingen geregistreerd:
+                    <span id="mouse-result"></span>
+                </p>
+        
+                <p>
+                    Scrollactiviteit:
+                    <span id="scroll-result"></span>
+                </p>
+        
+                <p class="warning">
+                    Uw gedrag is succesvol geanalyseerd.
+                </p>
+        
+            </div>
+            <div id="fine-document">
+                <h3>OFFICIEEL BESLUIT</h3>
+            
+                <p class="doc-id">Case ID: <span id="case-id"></span></p>
+            
+                <p>
+                    Op basis van gedragsanalyse tijdens deze sessie is vastgesteld
+                    dat uw interactiepatroon afwijkt van de normatieve baseline.
+                </p>
+            
+                <p>
+                    Gemeten afwijkingen:
+                </p>
+            
+                <ul>
+                    <li>Tijd buiten focus: <span id="fine-time"></span></li>
+                    <li>Muisactiviteit: <span id="fine-mouse"></span></li>
+                    <li>Interactie-instabiliteit: HIGH</li>
+                </ul>
+            
+                <p class="fine">
+                    Geschatte administratieve sanctie:
+                    <strong>€ <span id="fine-amount"></span></strong>
+                </p>
+            
+                <p class="warning">
+                    Dit besluit is automatisch gegenereerd en vereist geen menselijke beoordeling.
+                </p>
+            </div>
+        </div>
         <h2>Beeldmateriaal van het project</h2>
         <div class="images">
             <div class="img-wrapper">
