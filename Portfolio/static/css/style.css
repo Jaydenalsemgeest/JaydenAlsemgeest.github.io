@@ -842,3 +842,31 @@ b {
 #fine-document {
   transition: all 0.3s ease;
 }
+
+.eindresultaat-cubicle{
+  width:250px;
+  height:150px;
+}
+.wireframe-homepage{
+  width:300px;
+  height:400px;
+  transform: rotate(-90deg);
+  margin-right: 100px;
+}
+.wireframe-surveyvragen{
+  width:300px;
+  height:400px;
+  transform: rotate(-90deg);
+}
+.homepage-survey{
+  width:500px;
+  height:300px;
+}
+.vragensite-survey{
+  width:500px;
+  height:300px;
+}
+.resultatenpagina-survey{
+  width:500px;
+  height:300px;
+}
