@@ -874,3 +874,8 @@ b {
   width:200px;
   height:250px;
 }
+.profielfoto{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+}
