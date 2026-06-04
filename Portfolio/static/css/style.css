@@ -879,3 +879,12 @@ b {
   height:200px;
   border-radius: 50%;
 }
+.expo{
+  width:450px;
+  height:350px;
+}
+.onderschrift{
+  font-size: 0.9em; 
+  color: gray; 
+  margin-top: 6px;
+}
